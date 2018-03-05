@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94727e4b-6c8c-4a61-920c-692a43aec332" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Csv_Input/Csv_Input.go" afterPath="$PROJECT_DIR$/Csv_Input/Csv_Input.go" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Csv_Input/Csv_Input.go" afterPath="$PROJECT_DIR$/csv_input/Csv_Input.go" />
+      <change beforePath="$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" afterPath="" />
       <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,21 +28,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Csv_Input.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Csv_Input/Csv_Input.go">
+      <file leaf-file-name="csv_input.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/csv_input/csv_input.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="601">
+              <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
               <folding>
-                <element signature="e#226#259#0" expanded="false" />
-                <element signature="e#279#339#0" expanded="false" />
-                <element signature="e#356#427#0" expanded="false" />
-                <element signature="e#505#608#0" expanded="false" />
+                <element signature="e#19#208#0" expanded="true" />
+                <element signature="e#225#258#0" expanded="false" />
+                <element signature="e#278#338#0" expanded="false" />
+                <element signature="e#355#426#0" expanded="false" />
+                <element signature="e#504#607#0" expanded="false" />
                 <element signature="n#!!block;n#AddEdges#0" expanded="false" />
                 <element signature="n#!!block;n#GetPathId#0" expanded="false" />
-                <element signature="e#2215#2682#0" expanded="false" />
-                <element signature="e#2977#3256#0" expanded="false" />
-                <element signature="e#3561#4050#0" expanded="false" />
+                <element signature="e#2226#2693#0" expanded="false" />
+                <element signature="n#!!block;n#Algorithm_Starter#0" expanded="false" />
+                <element signature="e#2988#3267#0" expanded="false" />
+                <element signature="e#3570#4059#0" expanded="false" />
+                <element signature="n#!!block;n#info_data#0" expanded="false" />
+                <element signature="n#!!block;n#AddProcdata#0" expanded="false" />
+                <element signature="n#!!block;n#get_handler#0" expanded="false" />
+                <element signature="n#!!block;n#get_id1#0" expanded="false" />
+                <element signature="n#!!block;n#get_id2#0" expanded="false" />
+                <element signature="n#!!block;n#get_id3#0" expanded="false" />
+                <element signature="n#!!block;n#DataProcessor#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -49,33 +60,11 @@
       <file leaf-file-name="graphs.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graph/graphs.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="70" column="5" lean-forward="false" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="321" column="9" lean-forward="true" selection-start-line="321" selection-start-column="9" selection-end-line="321" selection-end-column="9" />
               <folding>
                 <element signature="e#16#82#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoveDuplicates.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-              <folding>
-                <element signature="e#56#180#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="panic.go" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/runtime/panic.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -85,6 +74,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>1</find>
+      <find>reader</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -99,9 +89,11 @@
         <option value="$PROJECT_DIR$/../../../src/github.com/vnestadov/Test_task_trains/src/CsvInput/CsvInput.go" />
         <option value="$PROJECT_DIR$/Csv_Input/CsvInput.go" />
         <option value="$PROJECT_DIR$/../../../src/github.com/vnestadov/Test_task_trains/CsvInput/CsvInput.go" />
-        <option value="$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/Csv_Input/Csv_Input.go" />
+        <option value="$PROJECT_DIR$/csv_input/Csv_Input.go" />
+        <option value="$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" />
+        <option value="$PROJECT_DIR$/csv_input/csv_input.go" />
       </list>
     </option>
   </component>
@@ -216,12 +208,12 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10136157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27302632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27302632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -271,12 +263,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Csv_Input/Csv_Input.go" />
+    <entry file="file://$PROJECT_DIR$/csv_input/csv_input.go" />
     <entry file="file://C:/Go/src/runtime/panic.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -296,7 +288,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graph/graphs.go" />
-    <entry file="file://$PROJECT_DIR$/Csv_Input/Csv_Input.go" />
+    <entry file="file://$PROJECT_DIR$/csv_input/csv_input.go" />
     <entry file="file://$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" />
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -367,7 +359,7 @@
     <entry file="file://$PROJECT_DIR$/Csv_Input/CsvInput.go" />
     <entry file="file://$PROJECT_DIR$/graph/graphs.go" />
     <entry file="file://$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" />
-    <entry file="file://$PROJECT_DIR$/Remove_Duplicates/Remove_Duplicates.go" />
+    <entry file="file://$PROJECT_DIR$/remove_duplicates/remove_duplicates.go" />
     <entry file="file://$PROJECT_DIR$/Gopkg.toml" />
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -440,21 +432,11 @@
     <entry file="file://$PROJECT_DIR$/../../../src/github.com/vnestadov/Test_task_trains/graph/graphs.go" />
     <entry file="file://$PROJECT_DIR$/Csv_Input/CsvInput.go" />
     <entry file="file://$PROJECT_DIR$/../../../src/github.com/vnestadov/Test_task_trains/CsvInput/CsvInput.go" />
-    <entry file="file://C:/Go/src/runtime/panic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding>
-            <element signature="e#56#180#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -468,30 +450,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graph/graphs.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="70" column="5" lean-forward="false" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="321" column="9" lean-forward="true" selection-start-line="321" selection-start-column="9" selection-end-line="321" selection-end-column="9" />
           <folding>
             <element signature="e#16#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Csv_Input/Csv_Input.go">
+    <entry file="file://$PROJECT_DIR$/csv_input/csv_input.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="601">
+          <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
           <folding>
-            <element signature="e#226#259#0" expanded="false" />
-            <element signature="e#279#339#0" expanded="false" />
-            <element signature="e#356#427#0" expanded="false" />
-            <element signature="e#505#608#0" expanded="false" />
+            <element signature="e#19#208#0" expanded="true" />
+            <element signature="e#225#258#0" expanded="false" />
+            <element signature="e#278#338#0" expanded="false" />
+            <element signature="e#355#426#0" expanded="false" />
+            <element signature="e#504#607#0" expanded="false" />
             <element signature="n#!!block;n#AddEdges#0" expanded="false" />
             <element signature="n#!!block;n#GetPathId#0" expanded="false" />
-            <element signature="e#2215#2682#0" expanded="false" />
-            <element signature="e#2977#3256#0" expanded="false" />
-            <element signature="e#3561#4050#0" expanded="false" />
+            <element signature="e#2226#2693#0" expanded="false" />
+            <element signature="n#!!block;n#Algorithm_Starter#0" expanded="false" />
+            <element signature="e#2988#3267#0" expanded="false" />
+            <element signature="e#3570#4059#0" expanded="false" />
+            <element signature="n#!!block;n#info_data#0" expanded="false" />
+            <element signature="n#!!block;n#AddProcdata#0" expanded="false" />
+            <element signature="n#!!block;n#get_handler#0" expanded="false" />
+            <element signature="n#!!block;n#get_id1#0" expanded="false" />
+            <element signature="n#!!block;n#get_id2#0" expanded="false" />
+            <element signature="n#!!block;n#get_id3#0" expanded="false" />
+            <element signature="n#!!block;n#DataProcessor#0" expanded="false" />
           </folding>
         </state>
       </provider>

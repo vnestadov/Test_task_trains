@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"github.com/vnestadov/Test_task_trains/Csv_Input"
+	"github.com/vnestadov/Test_task_trains/csv_input"
 )
 func main() {
 	reader := bufio.NewReader(os.Stdin)
@@ -13,5 +13,5 @@ func main() {
 	text, _ := reader.ReadString('\n')
 	fmt.Println(text)
 	text = strings.Replace(text, "\n", ".csv", -1)
-	Csv_Input.Input(text)
+	csv_input.Input(text)
 }
