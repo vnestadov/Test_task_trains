@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94727e4b-6c8c-4a61-920c-692a43aec332" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Csv_Input/Csv_Input.go" afterPath="$PROJECT_DIR$/csv_input/Csv_Input.go" />
-      <change beforePath="$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
+      <change beforePath="$PROJECT_DIR$/Csv_Input/Csv_Input.go" afterPath="$PROJECT_DIR$/Csv_Input/Csv_Input.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +28,8 @@
       <file leaf-file-name="csv_input.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csv_input/csv_input.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
+            <state relative-caret-position="169">
+              <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
               <folding>
                 <element signature="e#19#208#0" expanded="true" />
                 <element signature="e#225#258#0" expanded="false" />
@@ -470,8 +467,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csv_input/csv_input.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
+        <state relative-caret-position="169">
+          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
           <folding>
             <element signature="e#19#208#0" expanded="true" />
             <element signature="e#225#258#0" expanded="false" />
