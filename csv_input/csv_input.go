@@ -126,17 +126,17 @@ func Algorithm_Starter(data []remove_duplicates.Data) {
 		}
 	}
 	// Value from string to float64
-	for i := 0; i < len(data); i++ {
-		b, err := strconv.ParseFloat(data[i].Value, 64)
+	for _,v :=range data {
+		b, err := strconv.ParseFloat(v.Value, 64)
 		if err != nil {
 			log.Fatal(err)
 		}
 
-		f, err := strconv.Atoi(data[i].ID)
+		f, err := strconv.Atoi(v.ID)
 		if err != nil {
 			log.Fatal(err)
 		}
-		graph.AddEdge(data[i].DepStation, data[i].ArrStation, b, f, err)
+		graph.AddEdge(v.DepStation, v.ArrStation, b, f, err)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -186,8 +186,8 @@ func get_info_stations(edges []string, NewData InfoArray, data []remove_duplicat
 	destination_holder, _ := destination_reader.ReadString('\n')
 	destination_holder = strings.Replace(destination_holder, "\n", "", -1)
 
-	var TextOutPut string
-	TextOutPut = "from: " + cur_station_holder + " to: " + destination_holder
+
+	TextOutPut := fmt.Sprintf("from: %s to: %s",cur_station_holder, destination_holder)
 	info_data(TextOutPut, NewData, data)
 }
 func info_data(TextOutPut string, NewData InfoArray, data []remove_duplicates.Data) {
@@ -245,48 +245,51 @@ func info_data(TextOutPut string, NewData InfoArray, data []remove_duplicates.Da
 			fmt.Print("\n")
 			fmt.Println("This path will cost for you: ")
 			fmt.Println(v.Value[2])
-			fmt.Println("Do you want to take more information about trains (y/n) ?")
-			more_info := bufio.NewReader(os.Stdin)
-			text_holder, _ := more_info.ReadString('\n')
-			text_holder = strings.Replace(text_holder, "\n", "", -1)
-			if text_holder == "y" {
-				fmt.Println("Information about first route: ")
-				for _, v := range v.Path.ID1 {
-					for i := 0; i < len(data); i++ {
-						a, _ := strconv.Atoi(data[i].ID)
-
-						if v == a {
-							fmt.Println(data[i])
-						}
-					}
-
-				}
-				fmt.Println("Information about second route: ")
-				for _, v := range v.Path.ID2 {
-					for i := 0; i < len(data); i++ {
-						a, _ := strconv.Atoi(data[i].ID)
-
-						if v == a {
-							fmt.Println(data[i])
-						}
-					}
-
-				}
-				fmt.Println("Information about third route: ")
-				for _, k := range v.Path.ID3 {
-					for i := 0; i < len(data); i++ {
-						a, _ := strconv.Atoi(data[i].ID)
-
-						if k == a {
-							fmt.Println(data[i])
-						}
-					}
-
-				}
-			}
-			if text_holder == "n" {
-			}
+			more_information(v,data)
 		}
+	}
+}
+func more_information(v ProcessedData, data[]remove_duplicates.Data){
+	fmt.Println("Do you want to take more information about trains (y/n) ?")
+	more_info := bufio.NewReader(os.Stdin)
+	text_holder, _ := more_info.ReadString('\n')
+	text_holder = strings.Replace(text_holder, "\n", "", -1)
+	if text_holder == "y" {
+		fmt.Println("Information about first route: ")
+		for _, v := range v.Path.ID1 {
+			for i := 0; i < len(data); i++ {
+				a, _ := strconv.Atoi(data[i].ID)
+
+				if v == a {
+					fmt.Println(data[i])
+				}
+			}
+
+		}
+		fmt.Println("Information about second route: ")
+		for _, v := range v.Path.ID2 {
+			for i := 0; i < len(data); i++ {
+				a, _ := strconv.Atoi(data[i].ID)
+
+				if v == a {
+					fmt.Println(data[i])
+				}
+			}
+
+		}
+		fmt.Println("Information about third route: ")
+		for _, k := range v.Path.ID3 {
+			for i := 0; i < len(data); i++ {
+				a, _ := strconv.Atoi(data[i].ID)
+
+				if k == a {
+					fmt.Println(data[i])
+				}
+			}
+
+		}
+	}
+	if text_holder == "n" {
 	}
 }
 func AddProcdata(ProcData []ProcessedData, GlobalValueDataHolder [][]string, GlobalPathDataHolder []RouteInfo, GlobalFromToDataHolder []string) {
