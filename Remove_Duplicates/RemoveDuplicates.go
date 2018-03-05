@@ -1,4 +1,4 @@
-package RemoveDuplicates //todo use snake_case
+package Remove_Duplicates
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ type Data struct {
 	ArrTime    string
 }
 
-func RemoveDuplicatesUnordered(elements []string) []string { //todo func name starts witch package name, rename
+func Delete(elements []string) []string { //todo func name starts witch package name, rename
 	encountered := map[string]bool{}
 
 	// Create a map of all unique elements.
@@ -28,7 +28,7 @@ func RemoveDuplicatesUnordered(elements []string) []string { //todo func name st
 	}
 	return result
 }
-func RemoveDuplicatesFromData(Data []Data) []Data { //todo the same
+func Delete_Data(Data []Data) []Data { //todo the same
 	i := 0
 	k := len(Data)
 	for _, val := range Data {
