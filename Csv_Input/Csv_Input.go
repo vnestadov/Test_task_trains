@@ -121,8 +121,8 @@ func Algorithm_Starter(data []Remove_Duplicates.Data) {
 	edges := AddEdges(data)
 	graph := graphs.NewGraph()
 	for i := 0; i < len(edges); i++ {
-		err :=graph.AddVertex(edges[i], nil)
-		if err !=nil {
+		err := graph.AddVertex(edges[i], nil)
+		if err != nil {
 			log.Fatal(err)
 		}
 	}
@@ -138,7 +138,7 @@ func Algorithm_Starter(data []Remove_Duplicates.Data) {
 			log.Fatal(err)
 		}
 		graph.AddEdge(data[i].DepStation, data[i].ArrStation, b, f, err)
-		if err!=nil{
+		if err != nil {
 			log.Fatal(err)
 		}
 	}
