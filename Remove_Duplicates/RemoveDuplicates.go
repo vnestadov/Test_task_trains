@@ -13,7 +13,7 @@ type Data struct {
 	ArrTime    string
 }
 
-func Delete(elements []string) []string { //todo func name starts witch package name, rename
+func Delete(elements []string) []string {
 	encountered := map[string]bool{}
 
 	// Create a map of all unique elements.
@@ -28,7 +28,7 @@ func Delete(elements []string) []string { //todo func name starts witch package 
 	}
 	return result
 }
-func Delete_Data(Data []Data) []Data { //todo the same
+func Delete_Data(Data []Data) []Data {
 	i := 0
 	k := len(Data)
 	for _, val := range Data {

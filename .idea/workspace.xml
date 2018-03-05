@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94727e4b-6c8c-4a61-920c-692a43aec332" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CsvInput/CsvInput.go" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Csv_Input/Csv_Input.go" afterPath="$PROJECT_DIR$/Csv_Input/Csv_Input.go" />
-      <change beforePath="$PROJECT_DIR$/RemoveDuplicates/RemoveDuplicates.go" afterPath="$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" />
+      <change beforePath="$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" afterPath="$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" />
+      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,9 +18,11 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="252">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#14#108#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,8 +30,8 @@
       <file leaf-file-name="Csv_Input.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Csv_Input/Csv_Input.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="29" column="60" lean-forward="false" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+            <state relative-caret-position="246">
+              <caret line="130" column="52" lean-forward="true" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
               <folding>
                 <element signature="e#226#259#0" expanded="false" />
                 <element signature="e#279#339#0" expanded="false" />
@@ -40,8 +41,7 @@
                 <element signature="n#!!block;n#AddEdges#0" expanded="false" />
                 <element signature="n#!!block;n#GetPathId#0" expanded="false" />
                 <element signature="e#2215#2682#0" expanded="false" />
-                <element signature="n#!!block;n#Algorithm_Starter#0" expanded="false" />
-                <element signature="e#3510#3999#0" expanded="false" />
+                <element signature="e#3556#4045#0" expanded="false" />
                 <element signature="n#!!block;n#get_info_stations#0" expanded="false" />
                 <element signature="n#!!block;n#info_data#0" expanded="false" />
                 <element signature="n#!!block;n#AddProcdata#0" expanded="false" />
@@ -55,15 +55,25 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="graphs.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graph/graphs.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="102" column="24" lean-forward="true" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
+              <folding>
+                <element signature="e#16#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RemoveDuplicates.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
               <folding>
                 <element signature="e#56#180#0" expanded="false" />
-                <element signature="n#!!block;n#Delete#0" expanded="false" />
-                <element signature="n#!!block;n#Delete_Data#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -98,9 +108,9 @@
         <option value="$PROJECT_DIR$/../../../src/github.com/vnestadov/Test_task_trains/src/CsvInput/CsvInput.go" />
         <option value="$PROJECT_DIR$/Csv_Input/CsvInput.go" />
         <option value="$PROJECT_DIR$/../../../src/github.com/vnestadov/Test_task_trains/CsvInput/CsvInput.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go" />
         <option value="$PROJECT_DIR$/Csv_Input/Csv_Input.go" />
+        <option value="$PROJECT_DIR$/main.go" />
       </list>
     </option>
   </component>
@@ -215,12 +225,12 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10136157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27302632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27302632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -288,7 +298,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -299,7 +311,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -310,7 +324,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -321,7 +337,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -332,7 +350,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -343,7 +363,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -360,7 +382,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -369,7 +393,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -378,6 +404,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2052">
           <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+          <folding>
+            <element signature="e#16#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -392,7 +421,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -401,6 +432,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14348">
           <caret line="422" column="24" lean-forward="true" selection-start-line="422" selection-start-column="24" selection-end-line="422" selection-end-column="24" />
+          <folding>
+            <element signature="e#16#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -408,13 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph/graphs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -430,10 +457,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding>
+            <element signature="e#56#180#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/graphs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="102" column="24" lean-forward="true" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
+          <folding>
+            <element signature="e#16#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Csv_Input/Csv_Input.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="29" column="60" lean-forward="false" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+        <state relative-caret-position="246">
+          <caret line="130" column="52" lean-forward="true" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
           <folding>
             <element signature="e#226#259#0" expanded="false" />
             <element signature="e#279#339#0" expanded="false" />
@@ -443,8 +490,7 @@
             <element signature="n#!!block;n#AddEdges#0" expanded="false" />
             <element signature="n#!!block;n#GetPathId#0" expanded="false" />
             <element signature="e#2215#2682#0" expanded="false" />
-            <element signature="n#!!block;n#Algorithm_Starter#0" expanded="false" />
-            <element signature="e#3510#3999#0" expanded="false" />
+            <element signature="e#3556#4045#0" expanded="false" />
             <element signature="n#!!block;n#get_info_stations#0" expanded="false" />
             <element signature="n#!!block;n#info_data#0" expanded="false" />
             <element signature="n#!!block;n#AddProcdata#0" expanded="false" />
@@ -457,23 +503,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Remove_Duplicates/RemoveDuplicates.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#56#180#0" expanded="false" />
-            <element signature="n#!!block;n#Delete#0" expanded="false" />
-            <element signature="n#!!block;n#Delete_Data#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

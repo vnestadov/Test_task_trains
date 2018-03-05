@@ -121,7 +121,10 @@ func Algorithm_Starter(data []Remove_Duplicates.Data) {
 	edges := AddEdges(data)
 	graph := graphs.NewGraph()
 	for i := 0; i < len(edges); i++ {
-		graph.AddVertex(edges[i], nil) //todo handle err
+		err :=graph.AddVertex(edges[i], nil)
+		if err !=nil {
+			log.Fatal(err)
+		}
 	}
 	// Value from string to float64
 	for i := 0; i < len(data); i++ {
@@ -134,7 +137,10 @@ func Algorithm_Starter(data []Remove_Duplicates.Data) {
 		if err != nil {
 			log.Fatal(err)
 		}
-		graph.AddEdge(data[i].DepStation, data[i].ArrStation, b, f, nil) //todo handle err
+		graph.AddEdge(data[i].DepStation, data[i].ArrStation, b, f, err)
+		if err!=nil{
+			log.Fatal(err)
+		}
 	}
 
 	var GlobalValueDataHolder [][]string
