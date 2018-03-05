@@ -1,10 +1,9 @@
-package RemoveDuplicates
-
+package RemoveDuplicates //todo use snake_case
 
 import (
 	"fmt"
-
 )
+
 type Data struct {
 	ID         string
 	DepStation string
@@ -13,7 +12,8 @@ type Data struct {
 	DepTime    string
 	ArrTime    string
 }
-func RemoveDuplicatesUnordered(elements []string) []string {
+
+func RemoveDuplicatesUnordered(elements []string) []string { //todo func name starts witch package name, rename
 	encountered := map[string]bool{}
 
 	// Create a map of all unique elements.
@@ -28,7 +28,7 @@ func RemoveDuplicatesUnordered(elements []string) []string {
 	}
 	return result
 }
-func RemoveDuplicatesFromData(Data []Data) []Data {
+func RemoveDuplicatesFromData(Data []Data) []Data { //todo the same
 	i := 0
 	k := len(Data)
 	for _, val := range Data {

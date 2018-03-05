@@ -1,20 +1,21 @@
-package CsvInput
+package CsvInput //todo package name must be in snake_case
 
 import (
-	"RemoveDuplicates"
-	"os"
-	"fmt"
-	"encoding/csv"
 	"bufio"
+	"encoding/csv"
+	"fmt"
 	"io"
 	"log"
-	"graph"
+	"os"
 	"strconv"
 	"strings"
+
+	"github.com/vnestadov/Test_task_trains/RemoveDuplicates"
+	"github.com/vnestadov/Test_task_trains/graph"
 )
 
-type ArrayProcessedData struct {
-	Array []ProcessedData
+type ArrayProcessedData struct { //todo disambiguated name
+	Array []ProcessedData //the same
 }
 type ProcessedData struct {
 	FromTo string
@@ -23,16 +24,17 @@ type ProcessedData struct {
 }
 
 //Path type to save connection between Path and Id
-type Path struct {
-	Path1 []string
+type Path struct { //todo don't understand what it is, use normal name and abstractions
+	Path1 []string //todo rename this
 	Path2 []string
 	Path3 []string
-	Id1   []int
+	Id1   []int //todo use ID1 instead Id1
 	Id2   []int
 	Id3   []int
 }
 
 //type for get data from csv
+//todo rename function, when you call this func ypu have CsvInputFunc.CsvInputFunc(...)
 func CsvInputFunc(name string) []RemoveDuplicates.Data {
 	csvFile, err := os.Open(name)
 	if err != nil {
@@ -64,7 +66,10 @@ func CsvInputFunc(name string) []RemoveDuplicates.Data {
 	AlgorithmAccessor(data)
 	return data
 }
+
+//todo to long function, hard to read and understand
 func AlgorithmAccessor(data []RemoveDuplicates.Data) {
+	////////////////////////////////////////////todo create function for this
 	var temp []string
 	var edges []string
 	graph := graphs.NewGraph()
@@ -80,28 +85,32 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 		}
 	}
 	edges = RemoveDuplicates.RemoveDuplicatesUnordered(temp)
-
+	/////////////////////////////////////////////////////
 	for i := 0; i < len(edges); i++ {
-		graph.AddVertex(edges[i], nil)
+		graph.AddVertex(edges[i], nil) //todo handle err
 
 	}
 	// Value from string to float64
 	for i := 0; i < len(data); i++ {
 		b, err := strconv.ParseFloat(data[i].Value, 64)
 		if err != nil {
-			fmt.Println(err)
-		}
+			fmt.Println(err) //todo wtf? if you have err you print it? use panic, log.Fatal etc
+		} //todo add return in function, because if err != nil, you print it and then go throw code, this is really bad
 
-		f, err := strconv.Atoi(data[i].ID)
-		graph.AddEdge(data[i].DepStation, data[i].ArrStation, b, f, nil)
+		f, err := strconv.Atoi(data[i].ID)                               //todo handle err
+		graph.AddEdge(data[i].DepStation, data[i].ArrStation, b, f, nil) //todo handle err
 	}
+	//todo use var (...)
 	var ProcData []ProcessedData
 	var GlobalValueDataHolder [][]string
 	var GlobalPathDataHolder []Path
 	var GlobalFromToDataHolder []string
 	var counter1 = 0
+
 	GlobalValueDataHolder = make([][]string, len(edges)*(len(edges)-1))
 	GlobalPathDataHolder = make([]Path, len(edges)*(len(edges)-1))
+
+	//todo so long for, c-style, need refactor it
 	for i := 0; i < len(edges); i++ {
 		for j := 0; j < len(edges); j++ {
 			if edges[i] == edges[j] {
@@ -127,12 +136,12 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 				var IDPathHolder []graphs.Id
 				var PathHolder Path
 				for l := 0; l < len(path); l++ {
-					var EachIDPathHolder []graphs.Id
+					var EachIDPathHolder []graphs.Id //todo same
 					var ToStringPathHolder []string
 					for k := 0; k < len(path[l]); k++ {
 						EachIDPathHolder = path[l]
 						ToStringPathHolder = append(ToStringPathHolder, fmt.Sprintf("%v", EachIDPathHolder[k]))
-						if l == 0 {
+						if l == 0 { //todo use switch
 							PathHolder.Path1 = ToStringPathHolder
 						}
 						if l == 1 {
@@ -158,13 +167,15 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 					for k := 0; k < len(path[l]); k++ {
 						a = path[l]
 					}
-					IDPathHolder = append(IDPathHolder, a)
+					IDPathHolder = append(IDPathHolder, a) //todo result of append is never used
 				}
 			}
 		}
 	}
+
+	//todo create function for this
 	ProcData = make([]ProcessedData, counter1)
-	for _ = range ProcData {
+	for _ = range ProcData { //todo wtf? use just range ProcData
 		for h, v := range GlobalValueDataHolder {
 			ProcData[h].Value = v
 
@@ -173,7 +184,7 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 			fmt.Println(v)
 		}*/
 	}
-	for _ = range ProcData {
+	for _ = range ProcData { //todo the same
 		for h, v := range GlobalPathDataHolder {
 			ProcData[h].Path = v
 		}
@@ -188,6 +199,7 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 		fmt.Println(v)
 	}*/
 
+	//todo create function for this
 	var NewData ArrayProcessedData
 	NewData.Array = ProcData
 	NewData.DataProcessor(graph)
@@ -196,6 +208,7 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 	fmt.Println(edges)
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("Enter your current station: ")
+	//todo text, text1 is bad name for variables
 	text, _ := reader.ReadString('\n')
 	text = strings.Replace(text, "\n", "", -1)
 
@@ -204,11 +217,12 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 	text1, _ := reader1.ReadString('\n')
 	text1 = strings.Replace(text1, "\n", "", -1)
 
+	//todo add function for this
 	var TextOutPut string
 	TextOutPut = "from: " + text + " to: " + text1
 	for _, v := range NewData.Array {
 		if TextOutPut == v.FromTo {
-			fmt.Println("You have 3 path varieties: \n")
+			fmt.Println("You have 3 path varieties: \n") //todo if you use Println, you dont need in /n
 
 			//First path
 
@@ -224,7 +238,7 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 			}
 			//fmt.Println(v.Path.Id1)
 			fmt.Println("\nThis path will cost for you: ")
-			fmt.Println(v.Value[0], "\n")
+			fmt.Println(v.Value[0], "\n") //todo the same
 
 			//Second path
 
@@ -240,7 +254,7 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 			}
 			//fmt.Println(v.Path.Id1)
 			fmt.Println("\nThis path will cost for you: ")
-			fmt.Println(v.Value[1], "\n")
+			fmt.Println(v.Value[1], "\n") //same
 
 			//Third path
 
@@ -301,12 +315,15 @@ func AlgorithmAccessor(data []RemoveDuplicates.Data) {
 		}
 	}
 }
-func (ProcData ArrayProcessedData) DataProcessor(graph *graphs.Graph) () {
+
+//todo to long function
+func (ProcData ArrayProcessedData) DataProcessor(graph *graphs.Graph) {
 	for i := 0; i < len(ProcData.Array); i++ {
 		//var iml Path
-		var id1, id2, id3 []string
+		//todo would be better if you create struct for this and then call function to proccesing this data
+		var id1, id2, id3 []string //todo use var(...)
 		var index1, index2, index3 int
-		index1, index2, index3 = -1, -1, -1
+		index1, index2, index3 = -1, -1, -1 //todo can't understand what is it
 		for _, v := range ProcData.Array[i].Path.Path1 {
 			id1 = append(id1, v)
 			index1++
@@ -319,9 +336,9 @@ func (ProcData ArrayProcessedData) DataProcessor(graph *graphs.Graph) () {
 			id3 = append(id3, v)
 			index3++
 		}
-
+		//todo use switch
 		if len(id1) == 1 {
-			fmt.Println("Error")
+			fmt.Println("Error") //the same
 		}
 		if len(id1) == 2 {
 
@@ -350,7 +367,7 @@ func (ProcData ArrayProcessedData) DataProcessor(graph *graphs.Graph) () {
 		}
 
 		//fmt.Println(id1)
-
+		//todo so long create function for this
 		if len(id2) == 1 {
 			fmt.Println("Error")
 		}
@@ -380,7 +397,7 @@ func (ProcData ArrayProcessedData) DataProcessor(graph *graphs.Graph) () {
 			//fmt.Println("Маршрут 2: ", ProcData.Array[i].Path.Id2)
 		}
 		//fmt.Println(id2)
-
+		//todo the same
 		if len(id3) == 1 {
 			fmt.Println("Error")
 		}
