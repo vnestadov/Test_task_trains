@@ -5,8 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
-
-	"github.com/vnestadov/Test_task_trains/CsvInput"
+	"github.com/vnestadov/Test_task_trains/Csv_Input"
 )
 
 // Id uniquely identify a vertex.
@@ -18,5 +17,5 @@ func main() {
 	fmt.Println(text)
 	text = strings.Replace(text, "\n", ".csv", -1)
 
-	CsvInput.CsvInputFunc(text)
+	Csv_Input.Input(text)
 }
